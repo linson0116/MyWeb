@@ -4,4 +4,22 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+    <servlet>
+        <servlet-name>ServletUpFile</servlet-name>
+        <servlet-class>com.linson.myweb.servlet.ServletUpFile</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletDownFile</servlet-name>
+        <servlet-class>com.linson.myweb.servlet.ServletDownFile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletUpFile</servlet-name>
+        <url-pattern>/ServletUpFile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletDownFile</servlet-name>
+        <url-pattern>/ServletDownFile</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
